@@ -54,30 +54,30 @@ function drawCanvas() {
   var youLose = new Image();
   var loseText = new Image();
 
-  trisha.src = '../img/trishart.png';
-  trishaLt.src = '../img/trishalt.png';
-  trishaRtOpen.src = '../img/trishartopen.png';
-  trishaLtOpen.src = '../img/trishaltopen.png';
-  gregrt.src = '../img/gregrt.png';
-  greglt.src = '../img/greglt.png';
-  masonrt.src = '../img/masonrt.png';
-  masonlt.src = '../img/masonlt.png';
-  cookieDough.src = '../img/cookie-dough.png';
-  zaxbys.src = '../img/zaxbys.png';
-  bread.src = '../img/bread.png';
-  pizza.src = '../img/pizza.png';
-  pasta.src = '../img/pasta.png';
-  apple.src = '../img/apple.png';
-  sushi.src = '../img/sushi.png';
+  trisha.src = './img/trishart.png';
+  trishaLt.src = './img/trishalt.png';
+  trishaRtOpen.src = './img/trishartopen.png';
+  trishaLtOpen.src = './img/trishaltopen.png';
+  gregrt.src = './img/gregrt.png';
+  greglt.src = './img/greglt.png';
+  masonrt.src = './img/masonrt.png';
+  masonlt.src = './img/masonlt.png';
+  cookieDough.src = './img/cookie-dough.png';
+  zaxbys.src = './img/zaxbys.png';
+  bread.src = './img/bread.png';
+  pizza.src = './img/pizza.png';
+  pasta.src = './img/pasta.png';
+  apple.src = './img/apple.png';
+  sushi.src = './img/sushi.png';
   points.src = '';
-  onePoint.src = '../img/onePoint.png';
-  twoPoints.src = '../img/twoPoints.png';
-  threePoints.src = '../img/threePoints.png';
-  fourPoints.src = '../img/fourPoints.png';
-  minusOnePoint.src = '../img/minusOnePoint.png';
-  minusFourPoints.src = '../img/minusFourPoints.png';
+  onePoint.src = './img/onePoint.png';
+  twoPoints.src = './img/twoPoints.png';
+  threePoints.src = './img/threePoints.png';
+  fourPoints.src = './img/fourPoints.png';
+  minusOnePoint.src = './img/minusOnePoint.png';
+  minusFourPoints.src = './img/minusFourPoints.png';
   youLose.src = '';
-  loseText.src = '../img/youLose.png';
+  loseText.src = './img/youLose.png';
 
   var randomCookieDough = Math.random() + 1000 * 3;
   var randomZaxbys = Math.random() + 1000 * 6;
@@ -179,7 +179,7 @@ function drawCanvas() {
         gregrt.src = greglt.src;
         drawGreg();
       } else {
-        gregrt.src = '../img/gregrt.png';
+        gregrt.src = './img/gregrt.png';
         drawGreg();
       }
     }
@@ -196,7 +196,7 @@ function drawCanvas() {
         masonrt.src = masonlt.src;
         drawMason();
       } else {
-        masonrt.src = '../img/masonrt.png';
+        masonrt.src = './img/masonrt.png';
         drawMason();
       }
     }
@@ -286,7 +286,7 @@ function drawCanvas() {
       if (trishaOpen) {
         trisha.src = trishaRtOpen.src;
       } else {
-        trisha.src = '../img/trishart.png';
+        trisha.src = './img/trishart.png';
       }
       if (trishax > 350) {
         trishax = trishax;
@@ -314,7 +314,7 @@ function drawCanvas() {
       if (trishaOpen) {
         trisha.src = trishaLtOpen.src;
       } else {
-        trisha.src = '../img/trishalt.png';
+        trisha.src = './img/trishalt.png';
       }
       if (trishay < 0) {
         trishay = trishay;
@@ -328,7 +328,7 @@ function drawCanvas() {
       if (trishaOpen) {
         trisha.src = trishaRtOpen.src;
       } else {
-        trisha.src = '../img/trishart.png';
+        trisha.src = './img/trishart.png';
       }
       if (trishay > 320) {
         trishay = trishay;
@@ -458,7 +458,7 @@ function drawCanvas() {
         trishax = 200;
         trishay = 200;
         displayScore();
-        trisha.src = '../img/trishart.png';
+        trisha.src = './img/trishart.png';
         youLose.src = '';
       }, 1000);
     }
