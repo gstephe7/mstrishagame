@@ -1,6 +1,11 @@
 var canvas = document.getElementById('trisha');
 var ctx = canvas.getContext('2d');
 
+var moveUpBtn = document.getElementById('moveUpBtn');
+var moveLpBtn = document.getElementById('moveLtBtn');
+var moveDnBtn = document.getElementById('moveDnBtn');
+var moveRtBtn = document.getElementById('moveRtBtn');
+
 //Game score
 var score = 0;
 
@@ -429,6 +434,31 @@ function drawCanvas() {
       }
     })
 
+    //Detects player eating cookie dough
+    document.addEventListener('click', function() {
+      if (trishax > cookieDoughx - 60 && trishax < cookieDoughx + 60 && trishay > cookieDoughy - 70 && trishay < cookieDoughy + 30) {
+        eatCookieDough();
+      }
+      if (trishax > zaxbysx - 60 && trishax < zaxbysx + 60 && trishay > zaxbysy - 70 && trishay < zaxbysy + 30) {
+        eatZaxbys();
+      }
+      if (trishax > breadx - 60 && trishax < breadx + 60 && trishay > bready - 70 && trishay < bready + 30) {
+        eatBread();
+      }
+      if (trishax > pizzax - 60 && trishax < pizzax + 60 && trishay > pizzay - 70 && trishay < pizzay + 30) {
+        eatPizza();
+      }
+      if (trishax > pastax - 60 && trishax < pastax + 60 && trishay > pastay - 70 && trishay < pastay + 30) {
+        eatPasta();
+      }
+      if (trishax > applex - 60 && trishax < applex + 60 && trishay > appley - 70 && trishay < appley + 30) {
+        eatApple();
+      }
+      if (trishax > sushix - 60 && trishax < sushix + 60 && trishay > sushiy - 70 && trishay < sushiy + 30) {
+        eatSushi();
+      }
+    })
+
     document.addEventListener('keydown', function(e) {
       if (e.keyCode == 39) {
         moveRt();
@@ -440,6 +470,12 @@ function drawCanvas() {
         moveDn();
       }
     })
+
+    moveUpBtn.addEventListener('click', moveUp);
+    moveLtBtn.addEventListener('click', moveLt);
+    moveDnBtn.addEventListener('click', moveDn);
+    moveRtBtn.addEventListener('click', moveRt);
+
 
     function checkLose() {
       if (trishax > gregx - 60 && trishax < gregx + 60 && trishay > gregy - 65 && trishay < gregy + 60) {

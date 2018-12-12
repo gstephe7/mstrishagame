@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mason's Game</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,6 +12,17 @@
     <img src="img/title.png" class="center-block title-img" alt="Ms. Trisha">
 
     <canvas id="trisha" class="center-block" style="background-color: white"></canvas>
+
+    <div class="buttons">
+      <div class="top-button">
+        <button id="moveUpBtn">&uarr;</button>
+      </div>
+      <div class="bottom-buttons">
+        <button id="moveLtBtn">&larr;</button>
+        <button id="moveDnBtn">&darr;</button>
+        <button id="moveRtBtn">&rarr;</button>
+      </div>
+    </div>
 
     <h2 id="score" class="text-center">SCORE: <span id="scoreNum"></span></h2>
 
